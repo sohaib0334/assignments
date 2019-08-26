@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #grid {
+            display: grid;
+            margin: auto;
+            width: 90VW;
+            height: 90VH;
+            background-color: azure;
+            grid-template-rows: 2;
+            grid-template-columns: 3;
+            grid-template:
+             "a1 a1 a4"
+            "a3 a2 a4"
+            
+        }
+
+        .child {
+            margin: 2px;
+
+        }
+
+        .child:nth-child(1) {
+            background-color: green;
+            grid-area: a1
+        }
+
+        .child:nth-child(2) {
+            background-color: gray;
+
+
+            grid-area: a2
+        }
+
+        .child:nth-child(3) {
+            background-color: pink;
+
+            grid-area: a3
+        }
+
+        .child:nth-child(4) {
+            background-color: blue;
+
+            grid-area: a4
+        }
+
+     /*   .child:nth-child(5) {
+            background-color: red;
+
+
+            grid-area: a5
+        }
+
+        .child:nth-child(6) {
+            background-color: yellow;
+
+
+            grid-area: a6
+        }
+    */
+        
+    </style>
+</head>
+
+<body>
+    <div id="grid">
+        <div class="child">A</div>
+        <div class="child">B</div>
+        <div class="child">C</div>
+        <div class="child foure">D</div>
+
+
+
+    </div>
+</body>
+
+</html>

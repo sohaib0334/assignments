@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+   
+
+
+/* second example */
+.column-layout {
+  max-width: 1300px;
+  background-color:green;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  
+}
+
+.main-column {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-one {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-two {
+  flex: 1;
+  order: 3;
+  background-color: grey;
+
+}
+
+@media (min-width: 800px) {
+    .column-layout {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* third example */
+.call-outs-container {
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+  
+}
+
+.call-out {
+  background-color: greenyellow;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+}
+@media (min-width: 800px) {
+  .call-outs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+    
+    </style>
+</head>
+<body>
+    <div class="column-layout">
+        <div class="main-column">
+          <h2>Main Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti sequi voluptatum!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum fugit veniam amet quae sint vitae numquam dolore sunt quod a odio officia voluptate doloribus, at. Cum quasi mollitia eaque. Voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti sequi voluptatum!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum fugit veniam amet quae sint vitae numquam dolore sunt quod a odio officia voluptate doloribus, at. Cum quasi mollitia eaque.</p>
+        </div>
+      
+        <div class="sidebar-one">
+          <h3>Sidebar One</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum modi nisi tenetur sint dignissimos nulla, blanditiis nesciunt.</p>
+        </div>
+      
+        <div class="sidebar-two">
+          <h3>Sidebar Two</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum modi nisi tenetur sint dignissimos nulla, blanditiis nesciunt.</p>
+        </div>
+      </div>
+      
+      <!-- third example -->
+      <div class="call-outs-container">
+        <div class="call-out">
+          <h4>Feature 1</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+        </div>
+      
+        <div class="call-out">
+          <h4>Feature 2</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+        </div>
+      
+        <div class="call-out">
+          <h4>Feature 3</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+        </div>
+      </div>
+       
+</body>
+</html>
