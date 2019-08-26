@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+   <style>
+   .parent{
+
+       width: 50vw;
+       height: 80vh;
+       background-color: blue;
+       display: grid;
+       grid-template-rows: 3;
+       grid-template-columns: 3;
+       grid-template: 
+       "area1 area2 area3"
+       "area4 area5 area5"
+       "area6 area5 area5" 
+
+   }
+   .child:nth-child(1){
+       grid-area: area1 ;
+       background-color: rgb(19, 153, 97) ;
+       
+   }
+   .child:nth-child(2){
+       grid-area: area2 ;
+       background-color: rgb(185, 14, 134) ;
+   }
+   .child:nth-child(3){
+       grid-area: area3 ;
+       background-color: rgb(224, 136, 20) ;
+   }
+   .child:nth-child(4){
+       grid-area: area4 ;
+       background-color: brown;
+       
+   }
+   .child:nth-child(5){
+       grid-area: area5 ;
+       background-color: aqua;
+   }
+   .child:nth-child(6){
+       grid-area: area6 ;
+       background-color: blueviolet;
+
+   }
+   .child{
+       /* background-color: brown; */
+       margin: 2px;
+   }
+   
+   
+   
+   </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child" >
+
+        </div>
+        <div class="child">
+
+        </div>
+
+        <div class="child">
+
+        </div>
+
+        <div class="child">
+
+        </div>
+
+        <div class="child">
+
+        </div>
+
+        <div class="child">
+
+        </div>
+
+        
+
+
+
+    </div>
+</body>
+
+</html>
